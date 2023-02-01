@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Aplication</title>
+
+    <!-- ========= fontawesome ========= -->
+    <link rel="stylesheet" href="./css/all.css">
+    <!-- ========= bootstrap ========= -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+<body>
+
+  <!-- ========= start forms ========= -->
+  <div class="container shadow-lg p-4 mt-5 overflow-hidden">
+    <h1 class="text-center mb-4">CRUUD PROJECT</h1>
+    <label for="">ProductName:</label>
+    <input type="text" class="form-control mb-3" id="ProductName">
+
+    <label for="">Productcatalog:</label>
+    <input type="text" class="form-control mb-3" id="Productcatalog">
+
+    <label for="">ProductPrice:</label>
+    <input type="text" class="form-control mb-3" id="ProductPrice">
+
+    <label for="">productdesc:</label>
+    <textarea class="form-control mb-3" id="productdesc">
+
+    </textarea>
+
+    <button id="addBtn" onclick="AddProduct()" class="btn btn-primary d-inline-block">Add Product</button>
+    <button id="updateBtn" onclick="addUpdate()" class="btn btn-warning d-none">update</button>
+    <button onclick="resetproduct()" class="btn btn-danger">reset</button>
+  </div>
+  <!-- ========= end form ========= -->
+  <div class="container">
+    <input onkeyup="searchproducts()" type="text" class="form-control w-75 mx-auto my-4" placeholder="Search" id="search">
+  </div>
+  <!-- ========= start table ========= -->
+  <div class="container">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>index</th>
+          <th>Name</th>
+          <th>Catalog</th>
+          <th>Price</th>
+          <th>Description</th>
+          <th>update</th>
+          <th>delete</th>
+        </tr>
+      </thead>
+      <tbody id="tbody">
+
+
+
+      </tbody>
+    </table>
+  </div>
+  
+  <!-- ========= end table ========= -->
+    
+    <!-- ========= bootstrap javascript ========= -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
